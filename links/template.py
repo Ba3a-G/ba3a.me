@@ -1,4 +1,4 @@
-def template(title = "Ba3a", link = "https://ba3a.me") -> str:
+def template(title="Ba3a", link="https://ba3a.me") -> str:
     """Generate an HTML redirect document from the given link and title."""
 
     beforeCSS = f"""<!DOCTYPE html>
@@ -62,6 +62,5 @@ def template(title = "Ba3a", link = "https://ba3a.me") -> str:
     }
         -->
         </style>
-    
     """
     return beforeCSS + css + afterCSS
